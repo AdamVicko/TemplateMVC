@@ -1,4 +1,4 @@
-<?php
+<?php declare(strict_types=1);
 
 class App
 {
@@ -44,7 +44,7 @@ class App
         }
     }
 
-    public static function config($key)
+    public static function config(string $key)
     {
         $configFile = BP_APP . 'configuration.php';
 

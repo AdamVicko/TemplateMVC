@@ -1,4 +1,4 @@
-<?php
+<?php declare(strict_types=1);
 
 session_start();
 define('BP',__DIR__ . DIRECTORY_SEPARATOR);

@@ -1,4 +1,4 @@
-<?php
+<?php declare(strict_types=1);
 
 class Request 
 {
@@ -11,7 +11,7 @@ class Request
         }elseif(isset($_SERVER['REQUEST_URI'])){
             $route = $_SERVER['REQUEST_URI'];
         }
-        if(strpos($route, '?')>=0){
+        if(0 <= strpos($route, '?')){
             $route = explode('?',$route)[0];
         }
         return $route;
